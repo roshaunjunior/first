@@ -7,8 +7,7 @@ function App() {
      {name : "Mars" , isGasPlanet : false } ,
      {name : "Venus" , isGasPlanet : true} ,
      {name : "Jupiter" , isGasPlanet : false} ,
-     {name : "Neptune" , isGasPlanet : true} ,
-     {name : "Uranus" , isGasPlanet : true}
+     {name : "Uranuss" , isGasPlanet : true}
 ] ;
   return (
     <div className="App"> 
@@ -17,6 +16,7 @@ function App() {
       
 
      )}
+     <p>New Features </p>
     </div>
   );
 }
