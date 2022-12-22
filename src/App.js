@@ -3,14 +3,16 @@ import {useState} from 'react' ;
 //import {User} from './User'
 function App() {
   
-  const [text ,setText] = useState(false) ;
+  const [textColor ,setTextColor] = useState("green") ;
   // const showOrHide = () => {
   //   setText(!text)
   // }
   return (
     <div className="App"> 
-     <button onClick={()=> setText(!text)}> Show/Hide </button>
-     {text && <h1>My Name is Talha </h1> }
+     <button onClick={() => {
+      setTextColor(textColor === "green" ? "red" : "green") 
+     }}> Change Color  </button>
+     <h1 style={{color : textColor}}>My Name is Talha </h1> 
     </div>
   );
 }
