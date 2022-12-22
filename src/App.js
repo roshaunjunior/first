@@ -3,15 +3,14 @@ import {useState} from 'react' ;
 //import {User} from './User'
 function App() {
   
-  const [inputValue , setInputValue] = useState("") ;
-  const handleInput = (event) => {
-      setInputValue(event.target.value) ;
-  }  
-  
+  const [text ,setText] = useState(false) ;
+  // const showOrHide = () => {
+  //   setText(!text)
+  // }
   return (
     <div className="App"> 
-     <input type="text" onChange={handleInput} />
-     {inputValue} 
+     <button onClick={()=> setText(!text)}> Show/Hide </button>
+     {text && <h1>My Name is Talha </h1> }
     </div>
   );
 }
